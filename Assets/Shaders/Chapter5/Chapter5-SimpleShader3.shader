@@ -1,6 +1,4 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 Shader "Unity Shaders Book/Chapter 5/Simple Shader3"
 {
     SubShader
@@ -26,7 +24,7 @@ Shader "Unity Shaders Book/Chapter 5/Simple Shader3"
                 fixed3 color:COLOR0;
             };
 
-            v2f vert(a2v v):SV_POSITION
+            v2f vert(a2v v)
             {
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);

@@ -54,7 +54,7 @@ Shader "Unity Shaders Book/Chapter 6/Diffuse Pixel-Level"
                 fixed3 worldLight = normalize(_WorldSpaceLightPos0.xyz);
 
                 fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * saturate(dot(worldNormal, worldLight));
-                fixed3 color = ambient + diffuse;
+                fixed3 color = diffuse;
                 return fixed4(color, 1.0);
             }
             ENDCG

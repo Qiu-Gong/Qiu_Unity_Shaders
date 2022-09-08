@@ -48,7 +48,7 @@ Shader "Unity Shaders Book/Chapter 6/Diffuse Vertex-Level"
                 // Compute diffuse term
                 fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * saturate(dot(worldNormal, worldLight));
 
-                o.color = ambient + diffuse;
+                o.color =  diffuse;
                 return o;
             }
 

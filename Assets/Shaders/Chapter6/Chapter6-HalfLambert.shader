@@ -55,7 +55,7 @@ Shader "Unity Shaders Book/Chapter 6/Half Lambert"
 
                 fixed halfLambert = dot(worldNormal, worldLight) * 0.5 + 0.5;
                 fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * halfLambert;
-                fixed3 color = ambient + diffuse;
+                fixed3 color = diffuse;
                 return fixed4(color, 1.0);
             }
             ENDCG
